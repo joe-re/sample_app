@@ -6,17 +6,18 @@ gem 'rails', '4.1.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 gem 'bcrypt-ruby', '3.1.2'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'spring'
-end
-
-group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'rspec-its'
+  gem 'cucumber-rails', '1.4.0', require: false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 # Use SCSS for stylesheets
